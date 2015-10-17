@@ -20,11 +20,9 @@
       }
       #window {
         font-size: 200%;
-        color: green;
-      }
-      #button {
         color: blue;
       }
+   
       h1 {
         color: blue;
       }
@@ -44,7 +42,7 @@
       });
 
       var infowindow = new google.maps.InfoWindow({
-        content: 'Route 7 Chat<br><button>View Chat</button>'
+        content:  '<div id="window">Route 7 Chat</div><br><button>View Chat</button>'
       });
       var marker = new google.maps.Marker({
         position: {lat: 26.0818856, lng: -80.2357134},
@@ -56,7 +54,7 @@
       });
 
       var infowindow2 = new google.maps.InfoWindow({
-        content: 'Route 12 Chat<br><button>View Chat</button>'
+        content:  '<div id="window">Route 12 Chat</div><br><button>View Chat</button>'
       });
       var marker2 = new google.maps.Marker({
         position: {lat: 26.0918856, lng: -80.3357134},
