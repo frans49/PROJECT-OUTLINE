@@ -52,6 +52,9 @@
       marker.addListener('mouseover', function() {
         infowindow.open(map, marker);
       });
+  marker.addListener('mouseout', function() {
+        infowindow.close();
+      });
 
       var infowindow2 = new google.maps.InfoWindow({
         content:  '<div id="window">Route 12 Chat</div><br><button>View Chat</button>'
