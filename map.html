@@ -17,7 +17,13 @@
       } 
       #content {
         color: white;
-      
+      }
+      #window {
+        font-size: 200%;
+        color: green;
+      }
+      #button {
+        color: blue;
       }
       h1 {
         color: blue;
@@ -62,7 +68,7 @@
       });
       
       var infowindow3 = new google.maps.InfoWindow({
-        content: 'Route 14 Chat<br><button>View Chat</button>'
+        content: '<div id="window">Route 14 Chat</div><br><div id="button"><button>View Chat</button></div>'
       });
       var marker3 = new google.maps.Marker({
         position: {lat: 26.118856, lng: -80.3357134},
