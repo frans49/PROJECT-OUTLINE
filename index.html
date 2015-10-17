@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
-    <script src="javascripts/googlescript.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -25,15 +24,15 @@
       <div id="banner">
         <span id="logo"></span>
 <div>
-  
+
           <a href="https://github.com/frans49/newproject" class="button"><strong>View on GitHub1</strong></a>
-         
+
          <a href="https://github.com/frans49/newproject" class="button"><strong>View On GitHub2</strong></a>
-         
+
           <a href="https://github.com/frans49/newproject" class="button"><strong>View On GitHub3</strong></a>
-          
+
            <a href="https://github.com/frans49/newproject" class="button"><strong>View On GitHub4</strong></a>
-           
+
 </div>
 
         <div class="downloads">
@@ -53,25 +52,23 @@
           <ul><a href="https://github.com/frans49/Map" class="button"><strong>Map</strong></a></ul>
           <ul><a href="https://github.com/frans49/newproject" class="button"><strong>Settings</strong></a></ul>
           <ul><a href="https://github.com/frans49/newproject" class="button"><strong>View On GitHub1</strong></a></ul>
-          
-        
+
+
       </nav>
       <section>
         <div1>
           <h3>
-            
-            
+
+
            <table>
   <tr>
     <th>This is where the map will be Google/bing map perferred</th>
   </tr>
   <tr>
-    <td>50px wide</td>
-    <td>50px wide</td>
+    <td><div id="map"></div></td>
   </tr>
-</table> 
+</table>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 </div1>
 
@@ -84,7 +81,7 @@
 </div1>
 
 <div1><h3>
- 
+
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
 
 <p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
@@ -106,6 +103,19 @@
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+    <script>
+
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 26.0818856, lng: -80.2357134},
+        zoom: 10
+      });
+    }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5iWAlD26R4JY76-GBZclmFt8tYwNckO0&callback=initMap"
+        async defer></script>
   </body>
 </html>
