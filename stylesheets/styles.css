@@ -5,9 +5,9 @@ by Matt Graham
 div1 {
     background-color: lightgrey;
     width: auto;
-    padding: 25px;
-    border: 25px solid navy;
-    margin: 25px;
+    padding: 125px;
+    border: 125px solid navy;
+    margin: 125px;
 }
 
 @font-face {
