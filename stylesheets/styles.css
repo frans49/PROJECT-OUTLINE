@@ -4,7 +4,7 @@ by Matt Graham
 */
 div1 {
     background-color: lightgrey;
-    width: 300px;
+    width: auto;
     padding: 25px;
     border: 25px solid navy;
     margin: 25px;
