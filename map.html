@@ -52,9 +52,9 @@
       marker.addListener('click', function() {
         infowindow.open(map, marker);
       });
-  marker.addListener('mouseout', function() {
-        infowindow.close();
-      });
+      //marker.addListener('mouseout', function() {
+      //  infowindow.close();
+      //});
 
       var infowindow2 = new google.maps.InfoWindow({
         content:  '<div id="window">Route 12 Chat</div><br><button>View Chat</button>'
@@ -68,9 +68,9 @@
         infowindow2.open(map, marker2);
 
       });
-        marker2.addListener('mouseout', function() {
-        infowindow2.close();
-      });
+       // marker2.addListener('mouseout', function() {
+        //infowindow2.close();
+      //});
 
       
       var infowindow3 = new google.maps.InfoWindow({
@@ -84,9 +84,9 @@
       marker3.addListener('click', function() {
         infowindow3.open(map, marker3);
       });
-        marker3.addListener('mouseout', function() {
-        infowindow3.close();
-      });
+       // marker3.addListener('mouseout', function() {
+        //infowindow3.close();
+      //});
 
     }
 
